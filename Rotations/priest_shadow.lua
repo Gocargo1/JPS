@@ -1,12 +1,12 @@
 function priest_shadow(self)
 
 local spell = nil
---local nVampTouch = UnitDebuff("target", "Vampiric Touch",unitCaster=="player")
-local nFouet = UnitDebuff("target","Mind Flay",unitCaster=="player")
+--local nVampTouch = UnitAura("target", "Vampiric Touch", nil, "PLAYER|HARMFUL")
+local nFouet = UnitAura("target","Mind Flay", nil, "PLAYER|HARMFUL")
 local nOmbre = UnitBuff("player", "Empowered Shadow")
 local nOrbe,_,_,nStackOrbe = UnitBuff("player", "Shadow Orb")
-local nPain = UnitDebuff("target", "Shadow Word: Pain",unitCaster=="player");
-local nPest = UnitDebuff("target","Devouring Plague",unitCaster=="player")
+local nPain = UnitAura("target", "Shadow Word: Pain", nil, "PLAYER|HARMFUL");
+local nPest = UnitAura("target","Devouring Plague", nil, "PLAYER|HARMFUL")
 local nEvang,_,_,nStackEvang = UnitBuff("player","Dark Evangelism")
 local nMelt,_,_,nStackMelt = UnitBuff("player","Mind Melt")
 
